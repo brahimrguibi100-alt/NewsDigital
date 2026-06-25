@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsDigital | Canva Pro Morocco</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        .font-ar { font-family: 'Tajawal', sans-serif; }
+        .font-fr { font-family: 'Poppins', sans-serif; }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-ar transition-all duration-300">
+
+    <!-- Navigation / Header -->
+    <header class="bg-white/80 backdrop-blur-md shadow-sm py-4 sticky top-0 z-50 border-b border-slate-100">
+        <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+            <!-- Brand Logo -->
+            <div class="text-2xl font-black tracking-tight text-purple-700 font-fr">
+                News<span class="text-blue-600">Digital</span>
+            </div>
+            
+            <!-- Language Switcher & CTA -->
+            <div class="flex items-center gap-4">
+                <!-- Language Toggle Button -->
+                <button id="lang-toggle" onclick="switchLanguage()" class="flex items-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-1.5 rounded-lg font-bold text-sm transition-all border border-slate-200">
+                    <span id="lang-text-btn">Français 🇫🇷</span>
+                </button>
+                
+                <a href="https://wa.me/212658977391" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-xl font-bold transition-all shadow-md shadow-green-100 flex items-center gap-2 text-sm md:text-base">
+                    <span class="lang-ar">تواصل معنا</span>
+                    <span class="lang-fr hidden">Contactez-nous</span>
+                    <span>💬</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="text-center py-16 md:py-24 px-4 bg-gradient-to-b from-purple-50/50 via-white to-slate-50">
+        <div class="max-w-4xl mx-auto">
+            <!-- Badge -->
+            <div class="inline-flex items-center gap-2 bg-purple-100/80 text-purple-700 px-4 py-1.5 rounded-full text-xs md:text-sm font-bold mb-6 shadow-sm border border-purple-200/50">
+                <span class="lang-ar">تفعيل رسمي ومضمون 100% داخل المغرب 🇲🇦</span>
+                <span class="lang-fr hidden">Activation officielle & 100% garantie au Maroc 🇲🇦</span>
+            </div>
+            
+            <!-- Main Title -->
+            <h2 class="text-3xl md:text-6xl font-black mt-2 mb-6 leading-tight tracking-tight text-slate-900">
+                <span class="lang-ar">صمم بحال المحترفين مع <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600">Canva Pro</span> عبر NewsDigital</span>
+                <span class="lang-fr hidden">Créez comme un Pro avec <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600">Canva Pro</span> via NewsDigital</span>
+            </h2>
+            
+            <!-- Subtitle -->
+            <p class="text-base md:text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+                <span class="lang-ar">تهنى نهائياً من العلامة المائية واستفد من كاع ميزات الذكاء الاصطناعي والقوالب المدفوعة في حسابك الشخصي وبإيميلك الخاص وبأقل ثمن في السوق.</span>
+                <span class="lang-fr hidden">Dites adieu aux filigranes et profitez de toutes les fonctionnalités d'IA et des modèles payants sur votre compte personnel avec votre propre email.</span>
+            </p>
+            
+            <!-- CTA Button -->
+            <a href="#pricing" class="bg-purple-600 hover:bg-purple-700 text-white text-lg md:text-xl px-8 py-4 rounded-2xl font-bold shadow-xl shadow-purple-200 hover:shadow-purple-300 transition-all transform hover:-translate-y-0.5 inline-block">
+                <span class="lang-ar">شوف عروض التفعيل دابا 👇</span>
+                <span class="lang-fr hidden">Découvrir nos offres 👇</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section class="py-16 bg-white px-4">
+        <div class="max-w-5xl mx-auto">
+            <h3 class="text-2xl md:text-3xl font-black text-center mb-12 text-slate-900">
+                <span class="lang-ar">كاع الميزات المدفوعة غتولي عندك</span>
+                <span class="lang-fr hidden">Toutes les fonctionnalités Premium incluses</span>
+            </h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Feature 1 -->
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4">✨</div>
+                    <h4 class="text-lg font-bold mb-2 text-slate-800">
+                        <span class="lang-ar">الذكاء الاصطناعي بالكامل</span>
+                        <span class="lang-fr hidden">Outils IA Complets</span>
+                    </h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        <span class="lang-ar">استخدم أدوات الذكاء الاصطناعي السحرية لتوسيع الصور، إزالة العناصر، والكتابة الذكية بدون قيود.</span>
+                        <span class="lang-fr hidden">Utilisez les outils d'IA magiques pour agrandir les images, supprimer des éléments et rédiger sans limites.</span>
+                    </p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4">🖼️</div>
+                    <h4 class="text-lg font-bold mb-2 text-slate-800">
+                        <span class="lang-ar">إزالة الخلفية بضغطة زر</span>
+                        <span class="lang-fr hidden">Suppression d'Arrière-plan</span>
+                    </h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        <span class="lang-ar">حيد خلفية أي صورة أو فيديو ف ثانية واحدة وبدقة عالية واحترافية تامة.</span>
+                        <span class="lang-fr hidden">Supprimez l'arrière-plan de n'importe quelle image ou vidéo en une seconde avec une haute précision.</span>
+                    </p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-green-100 text-green-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4">🚀</div>
+                    <h4 class="text-lg font-bold mb-2 text-slate-800">
+                        <span class="lang-ar">تنزيل بجودة عالية HD</span>
+                        <span class="lang-fr hidden">Téléchargement Haute Qualité</span>
+                    </h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        <span class="lang-ar">حمل التصاميم ديالك بأعلى جودة ممكنة بصيغ PNG, SVG, PDF وبدون أي علامة مائية.</span>
+                        <span class="lang-fr hidden">Téléchargez vos designs dans la plus haute qualité possible aux formats PNG, SVG, PDF sans aucun filigrane.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Local Payment Methods Section (Moroccan Banks Only) -->
+    <section class="py-16 bg-slate-50 text-center px-4 border-y border-slate-100">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-2xl md:text-3xl font-black mb-2 text-slate-900">
+                <span class="lang-ar">طرق الدفع المتوفرة (بنوك مغربية فقط) 🇲🇦</span>
+                <span class="lang-fr hidden">Modes de Paiement (Banques Marocaines Uniquement) 🇲🇦</span>
+            </h3>
+            <p class="text-slate-500 text-sm md:text-base mb-10 max-w-xl mx-auto">
+                <span class="lang-ar">كنسهلو عليك المعاملة، الدفع آمن ومباشر عبر الحسابات المحلية والتفعيل فوري في أقل من 15 دقيقة بعد إرسال الوصل.</span>
+                <span class="lang-fr hidden">Paiement simple et sécurisé via vos applications locales. Activation rapide en moins de 15 minutes après l'envoi du reçu.</span>
+            </p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-white border border-slate-200/60 p-5 rounded-2xl flex flex-col justify-center items-center shadow-sm hover:border-purple-300 transition-all">
+                    <span class="font-black text-red-600 text-xl tracking-tight">CIH BANK</span>
+                    <span class="text-xs text-slate-400 mt-1.5 font-bold">
+                        <span class="lang-ar">تطبيق / تحويل</span>
+                        <span class="lang-fr hidden">Application / Virement</span>
+                    </span>
+                </div>
+                <div class="bg-white border border-slate-200/60 p-5 rounded-2xl flex flex-col justify-center items-center shadow-sm hover:border-purple-300 transition-all">
+                    <span class="font-black text-amber-600 text-lg tracking-tight">ATTIJARIWAFA</span>
+                    <span class="text-xs text-slate-400 mt-1.5 font-bold">
+                        <span class="lang-ar">تطبيق / تحويل</span>
+                        <span class="lang-fr hidden">Application / Virement</span>
+                    </span>
+                </div>
+                <div class="bg-white border border-slate-200/60 p-5 rounded-2xl flex flex-col justify-center items-center shadow-sm hover:border-purple-300 transition-all">
+                    <span class="font-black text-blue-800 text-lg tracking-tight">BANK OF AFRICA</span>
+                    <span class="text-xs text-slate-400 mt-1.5 font-bold">
+                        <span class="lang-ar">BMCE سابقاً</span>
+                        <span class="lang-fr hidden">Ex BMCE</span>
+                    </span>
+                </div>
+                <div class="bg-white border border-slate-200/60 p-5 rounded-2xl flex flex-col justify-center items-center shadow-sm hover:border-purple-300 transition-all">
+                    <span class="font-black text-green-600 text-lg tracking-tight">CASH PLUS</span>
+                    <span class="text-xs text-slate-400 mt-1.5 font-bold">
+                        <span class="lang-ar">أو وفاكاش</span>
+                        <span class="lang-fr hidden">Ou Wafacash</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 px-4 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-3xl md:text-4xl font-black text-center mb-3 text-slate-900">
+                <span class="lang-ar">اختار الباقة لي كتحتاجها</span>
+                <span class="lang-fr hidden">Choisissez votre abonnement</span>
+            </h3>
+            <p class="text-center text-slate-500 max-w-md mx-auto mb-16 text-sm md:text-base">
+                <span class="lang-ar">أثمنة جد مناسبة وملاءمة للسوق المغربي مع ضمان كامل طيلة مدة الاشتراك</span>
+                <span class="lang-fr hidden">Des tarifs adaptés au marché marocain avec une garantie totale durant votre abonnement</span>
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <!-- Monthly Card -->
+                <div class="bg-slate-50 p-6 md:p-8 rounded-3xl border border-slate-200/60 text-center hover:shadow-lg transition-all">
+                    <h4 class="text-lg font-bold text-slate-400 mb-2">
+                        <span class="lang-ar">باقة شهر واحد</span>
+                        <span class="lang-fr hidden">Pack 1 Mois</span>
+                    </h4>
+                    <div class="text-4xl font-black text-slate-800 mb-6">19 <span class="text-lg font-bold">DH</span></div>
+                    
+                    <ul class="text-right text-slate-600 mb-8 space-y-4 max-w-xs mx-auto text-sm md:text-base border-t border-slate-200 pt-6">
+                        <li class="flex items-center gap-3">
+                            <span class="text-green-500 font-bold">✓</span>
+                            <span class="lang-ar">تفعيل رسمي برابط الإيميل الشخصي</span>
+                            <span class="lang-fr hidden">Activation officielle par email personnel</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-green-500 font-bold">✓</span>
+                            <span class="lang-ar">ولوج كامل لكاع خصائص الـ Pro</span>
+                            <span class="lang-fr hidden">Accès complet à toutes les options Pro</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-green-500 font-bold">✓</span>
+                            <span class="lang-ar">دعم فني متواصل طيلة 30 يوم</span>
+                            <span class="lang-fr hidden">Support technique pendant 30 jours</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="https://wa.me/212658977391?text=Bonjour,%20je%20souhaite%20activer%20Canva%20Pro%20pour%201%20mois" target="_blank" class="block w-full bg-slate-800 hover:bg-slate-900 text-white py-3.5 rounded-xl font-bold transition-all text-sm md:text-base shadow-md">
+                        <span class="lang-ar">اطلب الباقة الشهرية 📱</span>
+                        <span class="lang-fr hidden">Commander le Pack Mensuel 📱</span>
+                    </a>
+                </div>
+                
+                <!-- Yearly Card (Featured) -->
+                <div class="bg-gradient-to-br from-slate-900 via-purple-950 to-slate-900 text-white p-6 md:p-8 rounded-3xl shadow-xl text-center relative border-2 border-purple-500 transform md:-translate-y-2">
+                    <div class="absolute top-0 right-1/2 transform translate-x-1/2 -translate-y-1/2 bg-amber-400 text-slate-950 px-4 py-1 rounded-full font-black text-xs uppercase tracking-wider shadow-md">
+                        <span class="lang-ar">العرض الأكثر طلباً 🔥</span>
+                        <span class="lang-fr hidden">Le Plus Populaire 🔥</span>
+                    </div>
+                    
+                    <h4 class="text-lg font-bold text-purple-300 mb-2 mt-2">
+                        <span class="lang-ar">باقة سنة كاملة (12 شهر)</span>
+                        <span class="lang-fr hidden">Pack Annuel (12 Mois)</span>
+                    </h4>
+                    <div class="text-5xl font-black mb-2 text-white">49 <span class="text-2xl font-bold">DH</span></div>
+                    <p class="text-xs text-purple-300/60 line-through mb-6">
+                        <span class="lang-ar">الثمن الأصلي: 1200 درهم</span>
+                        <span class="lang-fr hidden">Prix officiel : 1200 DH</span>
+                    </p>
+                    
+                    <ul class="text-right text-slate-200 mb-8 space-y-4 max-w-xs mx-auto text-sm md:text-base border-t border-purple-900 pt-6">
+                        <li class="flex items-center gap-3">
+                            <span class="text-amber-400 font-bold">★</span>
+                            <span class="lang-ar"><span class="text-amber-300 font-bold">ضمان كامل</span> لمدة 365 يوم</span>
+                            <span class="lang-fr hidden"><span class="text-amber-300 font-bold">Garantie totale</span> de 365 jours</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-purple-400 font-bold">★</span>
+                            <span class="lang-ar">تفعيل رسمي وآمن 100% على حسابك</span>
+                            <span class="lang-fr hidden">Activation 100% officielle sur votre compte</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-purple-400 font-bold">★</span>
+                            <span class="lang-ar">استخدام غير محدود للذكاء الاصطناعي</span>
+                            <span class="lang-fr hidden">Usage illimité des fonctionnalités IA</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-purple-400 font-bold">★</span>
+                            <span class="lang-ar">أولوية الدعم السريع عبر واتساب</span>
+                            <span class="lang-fr hidden">Support prioritaire via WhatsApp</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="https://wa.me/212658977391?text=Bonjour,%20je%20souhaite%20activer%20Canva%20Pro%20pour%201%20an" target="_blank" class="block w-full bg-purple-600 hover:bg-purple-700 text-white py-3.5 rounded-xl font-bold transition-all shadow-lg shadow-purple-900/50 text-sm md:text-base">
+                        <span class="lang-ar">اطلب باقة العام دابا 📱</span>
+                        <span class="lang-fr hidden">Commander le Pack Annuel 📱</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-slate-50 px-4 border-t border-slate-100">
+        <div class="max-w-3xl mx-auto">
+            <h3 class="text-2xl md:text-3xl font-black text-center mb-10 text-slate-900">
+                <span class="lang-ar">الأسئلة الشائعة 🤔</span>
+                <span class="lang-fr hidden">Questions Fréquentes 🤔</span>
+            </h3>
+            
+            <div class="space-y-4">
+                <!-- Q1 -->
+                <div class="bg-white p-5 rounded-2xl border border-slate-200/60 shadow-sm">
+                    <h4 class="font-bold text-base md:text-lg text-slate-900 mb-2">
+                        <span class="lang-ar">كيفاش كيتم تفعيل الحساب ديالي؟</span>
+                        <span class="lang-fr hidden">Comment se déroule l'activation ?</span>
+                    </h4>
+                    <p class="text-slate-600 text-sm md:text-base leading-relaxed">
+                        <span class="lang-ar">من بعد ما كتخلص عبر تطبيقك البنكي، كتصيفط لينا الإيميل ديالك في واتساب. NewsDigital غترسل ليك دعوة رسمية للانضمام لفريق العمل ديالنا على Canva. بمجرد قبولها، حسابك كيتّحول لـ Pro فوريّاً وبلا ما نحتاجو المودباس ديالك.</span>
+                        <span class="lang-fr hidden">Après votre paiement via votre application bancaire, vous nous envoyez votre adresse email sur WhatsApp. NewsDigital vous envoie une invitation officielle pour rejoindre notre équipe Canva. Dès que vous acceptez, votre compte passe en Pro instantanément sans besoin de votre mot de passe.</span>
+                    </p>
+                </div>
+                <!-- Q2 -->
+                <div class="bg-white p-5 rounded-2xl border border-slate-200/60 shadow-sm">
+                    <h4 class="font-bold text-base md:text-lg text-slate-900 mb-2">
+                        <span class="lang-ar">واش غنضيع في التصاميم القديمة ديالي؟</span>
+                        <span class="lang-fr hidden">Vais-je perdre mes anciens designs ?</span>
+                    </h4>
+                    <p class="text-slate-600 text-sm md:text-base leading-relaxed">
+                        <span class="lang-ar">لا نهائياً، كاع التصاميم القديمة ديالك غتبقى محفوظة ف الحساب ديالك وغتقدر تدخل ليها وتعدلها وتخدم عليها بميزات Pro الجديدة بكل سهولة.</span>
+                        <span class="lang-fr hidden">Pas du tout. Tous vos anciens designs restent intacts sur votre compte et vous pourrez continuer à les éditer avec les nouvelles options Pro.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm border-t border-slate-800">
+        <p class="font-fr mb-2 text-white font-bold text-base">NewsDigital &copy; 2026</p>
+        <p class="px-4">
+            <span class="lang-ar">موقع مستقل يوفر تفعيل وإدارة اشتراكات البرمجيات التعليمية والتصميم داخل المغرب.</span>
+            <span class="lang-fr hidden">Site indépendant de gestion et d'activation d'abonnements au Maroc.</span>
+        </p>
+    </footer>
+
+    <!-- JavaScript for Language Toggle -->
+    <script>
+        let currentLang = 'ar';
+
+        function switchLanguage() {
+            const htmlRoot = document.getElementById('html-root');
+            const langBtnText = document.getElementById('lang-text-btn');
+            const body = document.body;
+            
+            const arElements = document.querySelectorAll('.lang-ar');
+            const frElements = document.querySelectorAll('.lang-fr');
+
+            if (currentLang === 'ar') {
+                // Switch to FR
+                currentLang = 'fr';
+                htmlRoot.setAttribute('dir', 'ltr');
+                htmlRoot.setAttribute('lang', 'fr');
+                langBtnText.innerText = 'العربية 🇲🇦';
+                body.classList.remove('font-ar');
+                body.classList.add('font-fr');
+                
+                arElements.forEach(el => el.classList.add('hidden'));
+                frElements.forEach(el => el.classList.remove('hidden'));
+            } else {
+                // Switch to AR
+                currentLang = 'ar';
+                htmlRoot.setAttribute('dir', 'rtl');
+                htmlRoot.setAttribute('lang', 'ar');
+                langBtnText.innerText = 'Français 🇫🇷';
+                body.classList.remove('font-fr');
+                body.classList.add('font-ar');
+                
+                frElements.forEach(el => el.classList.add('hidden'));
+                arElements.forEach(el => el.classList.remove('hidden'));
+            }
+        }
+    </script>
+</body>
+</html>
